@@ -26,26 +26,17 @@
 
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
 
-    <script type="text/javascript">
-      // when a message is received from the page code
-      window.onmessage = (event) => {
-        if (event.data) {
-          document.getElementById("theLabel").innerHTML = event.data;
-        }
-      };
-
-      // send message to the page code
-      function button_click() {
-        window.parent.postMessage(document.getElementById("theMessage").value, "*");
-      }
-    </script>
+<script type="text/javascript">
+	// send message to the page code
+	function button_click() {
+		window.parent.postMessage(document.getElementById("theMessage").value, "*");
+	}
+</script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
   </head>
   
   <body>
-    <span id="theLabel" class="label">HTML Label</span>
-    <br/><br/>
-    <button class="button" onclick="button_click()">< Send Message</button>
+    <button class="button" onclick="button_click()"><Click Here to Checkout!</button>
     <br/><br/>
     <input type="text" class="input" id="theMessage">
 <!–– divs can use style and maybe other css like text align ––>
