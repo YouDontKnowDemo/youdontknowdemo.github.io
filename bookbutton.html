@@ -1,0 +1,52 @@
+<html>
+  <head>
+<!–– style style style style  style style style style  style style style style  style style style style  style style style style ––>
+    <style>
+      .button {
+        background-color: #155DE9;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        font-family: 'Arial';
+      }
+      .label {
+        font-family: 'Arial';
+      }
+      .input {
+        font-size: 0px;
+	visibility: hidden; 
+      }
+    </style>
+<!–– style style style style  style style style style  style style style style  style style style style  style style style style ––>
+
+<!–– script script script script script script script script script script script script script script script script script script ––>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"></script>
+
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+
+  <script type="text/javascript">
+      // when a message is received from the page code
+      window.onmessage = (event) => {
+        if (event.data == "checkoutkkk") {
+          window.location.href = "checkout2.html#!/cart";
+        }
+      };
+
+      // send message to the page code
+      function button_click() {
+        window.parent.postMessage(document.getElementById("theMessage").value, "*");
+      }
+    </script>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+  </head>
+  
+  <body>
+    <button class="button" onclick="button_click()"><Buy My Family Createted the National Security State, Instant Email!</button>
+    <input type="text" class="input" id="theMessage">
+</div>
+<a style="text-align:right" href="#"><p style="text-align:center">Buy My Family Createted the National Security State, Instant Email!</p> </a>
+  </body>
+</html>
