@@ -36,15 +36,18 @@
       };
 
       // send message to the page code
-      function button_click() {
-        window.parent.postMessage(" ", "*");
-      }
+
     </script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
   </head>
   
   <body>
     <button class="button" onclick="button_click()"><Click Here to Checkout!</button>
+	<script>
+      function button_click() {
+        window.parent.postMessage(" ", "*");
+      }
+    </script>
     <input type="text" class="input" id="theMessage">
 <!–– divs can use style and maybe other css like text align ––>
 <div style="text-align:center" class="snipcart-summary">
