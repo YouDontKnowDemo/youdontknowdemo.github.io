@@ -36,9 +36,10 @@
   <script type="text/javascript">
       // when a message is received from the page code
 window.onmessage = function(event) {
+	if (event.data == "checkoutkkk") {
         	window.location.href = "checkout2.html";
 
-
+	}
 };
 
       // send message to the page code
@@ -48,12 +49,11 @@ window.onmessage = function(event) {
   </head>
   
   <body>
-<div style="text-align:center">
     <button class="button" onclick="button_click()">
 	<div style="text-align:center" class="snipcart-summary">
     Items in your cart: <span class="snipcart-total-items"in your cart></span>
     Total price: <span class="snipcart-total-price"></span>
-
+</div>
 <p style="text-align:center"><u>Click here to Checkout!</u></p></button>
 	<script>
       function button_click() {
@@ -63,6 +63,6 @@ window.onmessage = function(event) {
     <input type="text" class="input" id="theMessage">
 <!–– divs can use style and maybe other css like text align ––>
 
-</div>
+
   </body>
 </html>
