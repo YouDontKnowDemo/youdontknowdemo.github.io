@@ -63,8 +63,12 @@ body {
 
 </head>
 <body>
-<div id="floatingRectangle">Hi.</div>
-<div style="text-align:center" class="snipcart-summary">
+<div style="text-align:center; 
+z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;" class="snipcart-summary">
 <button class="snipcart-checkout" class="snipcart-add-item">
 	Items in your cart: <span class="snipcart-total-items"in your cart></span> Total price: <span class="snipcart-total-price"></span>
 	<br>
