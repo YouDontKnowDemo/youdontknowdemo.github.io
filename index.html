@@ -32,7 +32,7 @@
 </head>
 <body>
 <div style="text-align:center" class="snipcart-summary">
-<button class="snipcart-add-item" onclick="button_click()">
+<button class="snipcart-add-item" onclick="checkout_click()">
 	Items in your cart: <span class="snipcart-total-items"in your cart></span>
 	Total price: <span class="snipcart-total-price"></span>
 	<p style="text-align:center"><u>Click here to Checkout!</u></p>
@@ -221,6 +221,9 @@
 <script>
 function button_click() {
 	window.parent.postMessage("message", "*");
+}
+function checkout_click() {
+	window.location.href = "bookbutton.html!#/cart"+ Date.now();
 }
 </script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
