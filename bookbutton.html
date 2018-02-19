@@ -1,16 +1,16 @@
 <html>
-  <head>
+<head>
 <!–– style style style style style style style style style style style style style style style style style style style style ––>
-    <style>
+<style>
       .snipcart-add-item:hover {
-	background-color: #4CAF50; /* Green */
-	color: white;
-	cursor:pointer;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        cursor:pointer;
       }
       .snipcart-add-item {
         background-color: #155DE9;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	background-image:url('');
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-image:url('');
         color: white;
         border: none;
         padding: 10px 20px;
@@ -24,7 +24,7 @@
         font-size: 0px;
 	visibility: hidden; 
       }
-    </style>
+</style>
 <!–– style style style style style style style style style style style style style style style style style style style style ––>
 
 <!–– script script script script script script script script script script script script script script script script script script ––>
@@ -33,39 +33,24 @@
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="ZDI4MGUzNzItMTlhZC00YjgwLWI4N2QtZGVhZDNhZDUxYWY1NjM2NTMwNjU3ODE0OTc0NDEw"  data-autopop="false"></script>
 
 <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
-
-  <script type="text/javascript">
-      // when a message is received from the page code
-      window.onmessage = (event) => {
-        if (event.data == "checkoutkkk") {
-          window.location.href = "bookbutton.html!#/cart"+ Date.now();
-        }
-      };
-
-    </script>
 <!–– script script script script script script script script script script script script script script script script script script ––>
-  </head>
-  <div style="text-align:center">
-  <body>
-    <button     
+</head>
+<body>
+<div style="text-align:center">
+<button     
 	class="snipcart-add-item"
-	class="button"
-    data-item-id="30"
-    data-item-name="My Family Created the National Security State"
-    data-item-price="15.00"
-    data-item-url="https://youdontknowdemo.github.io/index.html"
-    data-item-description="We will send your email a downloadable copy of My Family Created the National Security State"
-    data-item-file-guid="6765b33a-dbc8-43df-bed3-777bf9b23cf0" 
 	onclick="button_click()">
-<p style="text-align:center"><u>Buy My Family Createted the National Security State, (Instant Email)</u>!</p>
+	<span style="text-align:center"><u>Buy 'My Family Createted the National Security State', (Instant eBook)</u></span>
 </button>
 </div>
 
-	<script>
-      function button_click() {
-        window.parent.postMessage("message", "*");
-      }
-    </script>
-    <input type="text" class="input" id="theMessage">
-  </body>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+<script>
+function button_click() {
+	window.parent.postMessage("message", "*");
+}
+</script>
+<!–– script script script script script script script script script script script script script script script script script script ––>
+
+</body>
 </html>
